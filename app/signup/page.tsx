@@ -1,4 +1,5 @@
 import React from 'react'
+import SignUpForm from '../components/SignupForm'
 
 export const metadata = {
 	title: 'Sign up',
@@ -7,8 +8,8 @@ export const metadata = {
 
 export default function Home() {
 	return (
-		<div className='mt-[200px]'>
-			<p className='font-bold text-center uppercase text-3xl'>sign up</p>
+		<div className='mt-[100px] bg-gradient-to-r from-[#24262b] to-white'>
+			<SignUpForm />
 		</div>
 	)
 }

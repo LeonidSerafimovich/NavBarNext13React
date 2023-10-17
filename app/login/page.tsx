@@ -1,4 +1,5 @@
 import React from 'react'
+import LoginForm from '../components/LoginForm'
 
 export const metadata = {
 	title: 'Login',
@@ -7,8 +8,8 @@ export const metadata = {
 
 export default function Home() {
 	return (
-		<div className='mt-[200px]'>
-			<p className='font-bold text-center uppercase text-3xl'>Login</p>
+		<div className='mt-[100px] bg-gradient-to-r from-[#24262b] to-white'>
+			<LoginForm />
 		</div>
 	)
 }

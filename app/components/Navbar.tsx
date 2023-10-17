@@ -14,19 +14,17 @@ export default function Navbar() {
 	}
 
 	return (
-		<header className='bg-gradient-to-r from-black to-blue-700 text-red-600 w-full ease-in duration-800s fixed top-0 left-0 z-10'>
+		<header className='bg-[#24262b] text-gray-200 w-full ease-in duration-800s fixed top-0 left-0 z-50 '>
 			<nav className='max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-4 '>
 				<Logo />
 				{/* Увеличенный экран навигации */}
-
-				<ul className=' text-red-600 hidden items-center md:flex uppercase font-semibold text-1xl lg:text-[20px]'>
-					<NavLink href='/' text='Home' />
-					<NavLink href='/about' text='About' />
-					<NavLink href='/contacts' text='Contact' />
+				<ul className=' text-gray-200 hidden items-center md:flex uppercase font-semibold text-1xl lg:text-[20px]'>
+					<NavLink href='/' text='Обьявления' />
+					<NavLink href='/about' text='Подать объявление' />
+					<NavLink href='/contacts' text='Контакты' />
 					{/* Проверяем, что мобильное меню не активировано */}
 					{!menuIcon && <AuthButtons />}
 				</ul>
-
 				{/* Маленький экран навигации */}
 				<div onClick={handleSmallerScreenNavigation} className='flex md:hidden'>
 					{menuIcon ? (

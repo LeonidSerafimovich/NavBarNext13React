@@ -2,4 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
+@font-face {
+	font-family: 'YoungSerif';
+	src: url('/fonts/YoungSerif-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'YoungSerif', sans-serif;
+}
