@@ -9,8 +9,7 @@ export const metadata = {
 
 export default function Home() {
 	return (
-		<div className='mt-[200px]'>
-			<h1 className='font-bold text-center'>Личный кабинет</h1>
+		<div className='mt-[100px]'>
 			<div>
 				<CabinetMain />
 				<Footer />

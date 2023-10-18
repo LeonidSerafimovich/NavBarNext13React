@@ -10,10 +10,10 @@ export const metadata = {
 export default function Home() {
 	return (
 		<>
-			<div className='mt-[150px]'>
+			<div className='mt-[100px] flex justify-center bg-slate-100'>
 				<AddCardMain />
-				<Footer />
 			</div>
+			<Footer />
 		</>
 	)
 }

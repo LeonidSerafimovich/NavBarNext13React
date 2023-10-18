@@ -34,7 +34,7 @@ function PhotoUploadForm() {
 	}
 
 	return (
-		<div className='flex flex-col'>
+		<div className=''>
 			<input
 				type='file'
 				accept='image/*'
