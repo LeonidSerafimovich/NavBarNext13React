@@ -1,5 +1,5 @@
 import React from 'react'
-import SignUpForm from '../components/SignupForm'
+import SignUpForm from '../../src/components/SignupForm'
 
 export const metadata = {
 	title: 'Sign up',

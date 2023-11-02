@@ -1,9 +1,9 @@
-import DropDownList from '../components/componentsForm/dropDownLists/DropDownList'
-import Checkbox from '../components/componentsForm/inputs/CheckboxInput'
-import FileUpload from '../components/componentsForm/inputs/InputAddPhoto'
-import EmptyInput from '../components/componentsForm/inputs/EmptyInput'
-import ProductNameImput from '../components/componentsForm/inputs/ProductNameinput'
-import TextAreaInput from '../components/componentsForm/inputs/TextAreaInput'
+import DropDownList from '../componentsForm/dropDownLists/DropDownList'
+import Checkbox from '../componentsForm/inputs/CheckboxInput'
+import EmptyInput from '../componentsForm/inputs/EmptyInput'
+import FileUpload from '../componentsForm/inputs/InputAddPhoto'
+import TextAreaInput from '../componentsForm/inputs/TextAreaInput'
+import ProductNameImput from '../componentsForm/inputs/ProductNameinput'
 
 const stateCategories1 = ['Хорошее', 'Идеальное', 'Среднее', 'Требует ремонта']
 const stateCategories2 = [

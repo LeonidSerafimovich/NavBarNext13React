@@ -25,7 +25,7 @@ export default function MobileMenu({
 						onClick={handleSmallerScreenNavigation}
 						className='py-5 hover:text-black transition duration-700 cursor-pointer '
 					>
-						<Link href='/about'>Добавить объявление</Link>
+						<Link href='/addcard'>Добавить объявление</Link>
 					</li>
 					<li
 						onClick={handleSmallerScreenNavigation}

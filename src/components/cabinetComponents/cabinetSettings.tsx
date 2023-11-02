@@ -1,11 +1,10 @@
 'use client'
 
-import Input from 'react-widgets/cjs/Input'
-import Checkbox from '../components/componentsForm/inputs/CheckboxInput'
-import TextAreaInput from '../components/componentsForm/inputs/TextAreaInput'
-import PhoneNumberInput from '../components/componentsForm/inputs/PhoneNumberInput'
-import EmailInput from '../components/componentsForm/inputs/EmailInput'
-import PasswordChangeForm from '../components/componentsForm/inputs/PasswordChangeForm'
+import Checkbox from '../componentsForm/inputs/CheckboxInput'
+import TextAreaInput from '../componentsForm/inputs/TextAreaInput'
+import PhoneNumberInput from '../componentsForm/inputs/PhoneNumberInput'
+import EmailInput from '../componentsForm/inputs/EmailInput'
+import PasswordChangeForm from '../componentsForm/inputs/PasswordChangeForm'
 
 export default function CabinetSettings() {
 	return (
@@ -41,8 +40,16 @@ export default function CabinetSettings() {
 				<span className='font-bold'>О себе:</span>
 				<TextAreaInput />
 			</div>
+			<div className='grid grid-cols-3 gap-4 place-items-center mb-6'>
+				<a
+					href='/license'
+					className='p-2 pl-2 pr-2 rounded-lg bg-red-400 hover:bg-red-600 duration-300 '
+				>
+					Мои лицензии
+				</a>
+			</div>
 			<div className='grid grid-cols-3  place-items-center mb-6'>
-				<button className=' bg-red-300 py-2 pl-2 pr-2 hover:bg-red-600 duration-200 rounded-md  '>
+				<button className=' bg-red-400 py-2 pl-2 pr-2 hover:bg-red-600 duration-300 rounded-md  '>
 					Удалить профиль
 				</button>
 			</div>

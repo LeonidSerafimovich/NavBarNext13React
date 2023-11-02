@@ -1,5 +1,5 @@
 import React from 'react'
-import CabinetMain from '../cabonetComponents/cabinetMain'
+import CabinetMain from '../../src/components/cabinetComponents/cabinetMain'
 import Footer from '../FooterComponents/FooterMain/Footer'
 
 export const metadata = {

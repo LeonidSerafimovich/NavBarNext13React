@@ -1,7 +1,5 @@
 import React from 'react'
 import CompanySection from '../CompanySection/CompanySection'
-import GetHelperSection from '../GetHelperSection/GetHelperSection'
-import OnlineShopSection from '../OnlineShopSection/OnlineShopSection'
 import FollowUsSection from '../FollowUsSection/FollowUsSection'
 
 const Footer = () => {

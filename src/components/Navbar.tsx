@@ -1,10 +1,10 @@
 'use client'
 import { useState } from 'react'
-import Logo from './Logo'
-import NavLink from './NavLink'
-import AuthButtons from './AuthButtons'
-import MobileMenu from './MobileMenu'
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+import AuthButtons from './AuthButtons'
+import Logo from './Logo'
+import MobileMenu from './MobileMenu'
+import NavLink from './NavLink'
 
 export default function Navbar() {
 	const [menuIcon, setIcon] = useState(false)
@@ -20,8 +20,9 @@ export default function Navbar() {
 				{/* Увеличенный экран навигации */}
 				<ul className=' text-gray-200 hidden items-center md:flex uppercase font-semibold text-1xl lg:text-[20px]'>
 					<NavLink href='/' text='Обьявления' />
-					<NavLink href='/about' text='Подать объявление' />
+					<NavLink href='/addcard' text='Подать объявление' />
 					<NavLink href='/contacts' text='Контакты' />
+
 					{/* Проверяем, что мобильное меню не активировано */}
 					{!menuIcon && <AuthButtons />}
 				</ul>

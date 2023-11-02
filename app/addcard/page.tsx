@@ -1,10 +1,10 @@
 import React from 'react'
+import AddCardMain from '../../src/components/CompAddcard/AddCardMain'
 import Footer from '../FooterComponents/FooterMain/Footer'
-import AddCardMain from '../CompAddcard/AddCardMain'
 
 export const metadata = {
-	title: 'About',
-	description: 'description for the about page'
+	title: 'addcard',
+	description: 'description for the addcard page'
 }
 
 export default function Home() {

@@ -1,5 +1,5 @@
 import Footer from './FooterComponents/FooterMain/Footer'
-import CardMain from './compCard/CardMain'
+import CardMain from '../src/components/compCard/CardMain'
 
 const DE1 = './images/DE1.jpg'
 
