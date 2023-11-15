@@ -4,6 +4,15 @@ import React from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import Input from './componentsForm/inputs/LableTopInput'
 import { RegistrarionData } from '../types/auth/AuthDataType'
+import { useDispatch } from 'react-redux'
+import { signupUser } from '../redux/auth/authSignup/signupAction'
+// import { useRouter } from 'next/router'
+
+// interface UserData {
+// 	userName: string
+// 	email: string
+
+// }
 
 function SignUpForm() {
 	const {
@@ -12,10 +21,39 @@ function SignUpForm() {
 		formState: { errors }
 	} = useForm<RegistrarionData>()
 
+	const dispatch = useDispatch()
+
 	const onSubmit: SubmitHandler<RegistrarionData> = data => {
-		alert(`твой емаил ${data.email}`)
-		console.log(errors)
+		dispatch(signupUser(data.userName, data.email))
 	}
+
+	// const handleRegistrationSubmit = async (userData: UserData) => {
+	// 	const dispatch = useDispatch()
+	// 	const router = useRouter()
+
+	// 	try {
+	// 		// Отправляем данные на сервер для регистрации
+	// 		const response = await fetch('/api/register', {
+	// 			method: 'POST',
+	// 			headers: {
+	// 				'Content-Type': 'application/json'
+	// 			},
+	// 			body: JSON.stringify(userData)
+	// 		})
+
+	// 		// После успешной регистрации
+	// 		if (response.ok) {
+	// 			// Вызываем action для обновления состояния в Redux
+	// 			dispatch(signupUser(userData.userName, userData.email))
+
+	// 			// Перенаправляем пользователя на нужную страницу
+	// 			router.push('/') // Замените '/dashboard' на путь к нужной странице
+	// 		}
+	// 	} catch (error) {
+	// 		// Обработка ошибок при регистрации
+	// 		console.error('Ошибка при регистрации:', error)
+	// 	}
+	// }
 
 	return (
 		<div className='wrapper mt-[0px] min-h-screen flex items-center justify-center'>
@@ -75,9 +113,9 @@ function SignUpForm() {
 
 					<button
 						type='submit'
-						className='bg-blue-500 hover:bg-gradient-to-r from-violet-500 to-fuchsia-500 py-2 px-4 rounded-md text-white transition duration-300 animate-gradient'
+						className='bg-blue-500 hover:bg-violet-500 duration-200 py-2 px-4 rounded-md text-white  '
 					>
-						Зарегестрироваться
+						Зарегистрироваться
 					</button>
 				</form>
 			</div>

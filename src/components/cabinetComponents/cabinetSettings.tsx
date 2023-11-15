@@ -9,7 +9,7 @@ import PasswordChangeForm from '../componentsForm/inputs/PasswordChangeForm'
 export default function CabinetSettings() {
 	return (
 		<div className='min-h-[300px] px-4 '>
-			<h1 className='mb-6 ml-6 text-2xl '>Привет, Aboba</h1>
+			<h1 className='mb-6 ml-6 text-2xl '>Привет{}</h1>
 			<div className='grid grid-cols-3 gap-4 place-items-center mb-6 border-b-2 '>
 				<span className='font-bold '>Телефон:</span>
 				<div className='mb-2'>
@@ -43,13 +43,13 @@ export default function CabinetSettings() {
 			<div className='grid grid-cols-3 gap-4 place-items-center mb-6'>
 				<a
 					href='/license'
-					className='p-2 pl-2 pr-2 rounded-lg bg-red-400 hover:bg-red-600 duration-300 '
+					className='bg-red-50 border-2 border-red-300 rounded py-1 px-3 block hover:border-red-600 hover:text-red-900 duration-300 '
 				>
 					Мои лицензии
 				</a>
 			</div>
 			<div className='grid grid-cols-3  place-items-center mb-6'>
-				<button className=' bg-red-400 py-2 pl-2 pr-2 hover:bg-red-600 duration-300 rounded-md  '>
+				<button className='bg-red-50 border-2 border-red-300 rounded py-1 px-3 block hover:border-red-600 hover:text-red-900 duration-300'>
 					Удалить профиль
 				</button>
 			</div>

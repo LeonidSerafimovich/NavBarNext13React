@@ -1,9 +1,11 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import Input from './componentsForm/inputs/LableTopInput'
 import { EmailPassword } from '../types/auth/AuthDataType'
+import { loginUser } from '../redux/auth/authActions'
+import { useDispatch } from 'react-redux'
 
 function LoginForm() {
 	const {
@@ -12,9 +14,10 @@ function LoginForm() {
 		formState: { errors }
 	} = useForm<EmailPassword>()
 
+	const dispatch = useDispatch()
+
 	const onSubmit: SubmitHandler<EmailPassword> = data => {
-		alert(`твой емаил ${data.email}`)
-		console.log(errors)
+		dispatch(loginUser(data.email))
 	}
 
 	return (
@@ -27,7 +30,7 @@ function LoginForm() {
 							required: 'введи email'
 						})}
 						id='email'
-						type='text'
+						type='email'
 						placeholder='email'
 						label='Введите email'
 					/>
@@ -56,15 +59,15 @@ function LoginForm() {
 				</form>
 				<a
 					href='#'
-					className='text-blue-500 hover:text-[#3a51d6] hover:translate-x-2 transition duration-900 text-left text-sm block mt-4'
+					className='text-blue-500 hover:text-[#3a51d6] hover:translate-x-2 transition text-left text-sm block mt-4'
 				>
 					Забыли пароль ?
 				</a>
 				<a
 					href='/signup'
-					className='text-blue-500 text-sm hover:translate-x-2 hover:text-[#3a51d6] transition duration-900 text-left block mt-2'
+					className='text-blue-500 text-sm hover:translate-x-2 hover:text-[#3a51d6] transition text-left block mt-2'
 				>
-					Зарегестрироваться
+					Зарегистрироваться
 				</a>
 			</div>
 		</div>
