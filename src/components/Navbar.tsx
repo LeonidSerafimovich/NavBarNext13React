@@ -18,7 +18,7 @@ export default function Navbar() {
 			<nav className='max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-4 '>
 				<Logo />
 				{/* Увеличенный экран навигации */}
-				<ul className=' text-gray-200 hidden items-center md:flex uppercase font-semibold text-1xl lg:text-[20px]'>
+				<ul className=' text-gray-200 normal-case hidden items-center md:flex  font-semibold text-1xl lg:text-[20px]'>
 					<NavLink href='/' text='Обьявления' />
 					<NavLink href='/addcard' text='Подать объявление' />
 					<NavLink href='/contacts' text='Контакты' />

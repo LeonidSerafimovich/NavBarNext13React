@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-
 import signReducer from './authSignup/signupReducer'
+import photoReducer from './photoReducer'
 
 const rootReducer = combineReducers({
-	//auth: authReducer,
-	signup: signReducer
+	signup: signReducer,
+	photoUser: photoReducer
 })
 
 export type rootReducer = ReturnType<typeof rootReducer>

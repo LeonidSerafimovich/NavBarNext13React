@@ -1,12 +1,20 @@
 // reducers/authReducer.ts
 
 const initialState = {
-	loggedInUser: null
+	loggedInUser: null,
+	avatar: ''
 }
 
 const authReducer = (
 	state = initialState,
-	action: { type: string; payload: { email: string; password: string } }
+	action: {
+		type: string
+		payload: {
+			avatar: any
+			email: string
+			password: string
+		}
+	}
 ) => {
 	switch (action.type) {
 		case 'LOGIN_USER':
@@ -14,7 +22,8 @@ const authReducer = (
 				...state,
 				loggedInUser: {
 					email: action.payload.email,
-					password: action.payload.password
+					password: action.payload.password,
+					avatar: action.payload.avatar
 				}
 			}
 		default:

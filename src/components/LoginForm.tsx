@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React from 'react'
 import { useForm, SubmitHandler } from 'react-hook-form'
 import Input from './componentsForm/inputs/LableTopInput'
 import { EmailPassword } from '../types/auth/AuthDataType'

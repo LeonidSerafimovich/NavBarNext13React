@@ -6,13 +6,6 @@ import Input from './componentsForm/inputs/LableTopInput'
 import { RegistrarionData } from '../types/auth/AuthDataType'
 import { useDispatch } from 'react-redux'
 import { signupUser } from '../redux/auth/authSignup/signupAction'
-// import { useRouter } from 'next/router'
-
-// interface UserData {
-// 	userName: string
-// 	email: string
-
-// }
 
 function SignUpForm() {
 	const {
@@ -26,34 +19,6 @@ function SignUpForm() {
 	const onSubmit: SubmitHandler<RegistrarionData> = data => {
 		dispatch(signupUser(data.userName, data.email))
 	}
-
-	// const handleRegistrationSubmit = async (userData: UserData) => {
-	// 	const dispatch = useDispatch()
-	// 	const router = useRouter()
-
-	// 	try {
-	// 		// Отправляем данные на сервер для регистрации
-	// 		const response = await fetch('/api/register', {
-	// 			method: 'POST',
-	// 			headers: {
-	// 				'Content-Type': 'application/json'
-	// 			},
-	// 			body: JSON.stringify(userData)
-	// 		})
-
-	// 		// После успешной регистрации
-	// 		if (response.ok) {
-	// 			// Вызываем action для обновления состояния в Redux
-	// 			dispatch(signupUser(userData.userName, userData.email))
-
-	// 			// Перенаправляем пользователя на нужную страницу
-	// 			router.push('/') // Замените '/dashboard' на путь к нужной странице
-	// 		}
-	// 	} catch (error) {
-	// 		// Обработка ошибок при регистрации
-	// 		console.error('Ошибка при регистрации:', error)
-	// 	}
-	// }
 
 	return (
 		<div className='wrapper mt-[0px] min-h-screen flex items-center justify-center'>
